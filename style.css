@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-size: 1.25rem;
+}
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+    width: fit-content;
+}
+
+.upload-section {
+    margin: 10px 0 0 30px;
+}
+.upload-label {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007ee5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.upload-label:hover {
+    background-color: #005bb5;
+}
+.upload-input {
+    display: none;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#files {
+    margin-left: 0;
+}
+.folder {
+    /* display: flex; */
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+.folder h3 {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5px 30px;
+}
+.folder img {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+.folder ul {
+    margin-left: 30px;
+}
+
+.file {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.file a {
+    display: flex;
+    align-items: center;
+    color: #02269f;
+    font-weight: 400;
+}
+.file a::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/file.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.file a:hover {
+    text-decoration: underline;
+}
